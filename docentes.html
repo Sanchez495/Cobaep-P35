@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Docentes de la istitucion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .imagen {
+            display: inline-block; /* Para mantener las imágenes en el mismo párrafo */
+            text-align: center; /* Centra el texto debajo de la imagen */
+            margin: 55px; /* Espaciado entre las imágenes */
+            animation: fadeIn 3s ease; /* Animación para cada imagen */
+        }
+        .imagen img {
+            width: 200px; /* Tamaño inicial de las imágenes */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border: 2px solid #333; /* Añade un borde a la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor a una mano */
+            transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+        }
+        .imagen img.ampliado {
+            transform: scale(2); /* Amplía el tamaño de la imagen */
+        }
+        .imagen p {
+            margin-top: 10px; /* Espaciado entre la imagen y el texto */
+            font-size: 16px; /* Tamaño del texto */
+            color: #555; /* Color del texto */
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Comienza invisible */
+                transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+            }
+            to {
+                opacity: 1; /* Termina visible */
+                transform: translateY(0); /* Posición final */
+            }
+        }
+    </style>
+    <script>
+        // Función para alternar el estado ampliado de la imagen
+        function ampliarImagen(event) {
+            const img = event.target;
+            img.classList.toggle('ampliado');
+        }
+    </script>
+</head>
+<body>
+    <center><h1>Galería de Imágenes</h1></center>
+    <div class="imagen">
+        <img src="29.png" alt="Imagen 1" onclick="ampliarImagen(event)">
+        <p>Jose Miguel Quecho Nahuacatl</p>
+    </div>
+    <div class="imagen">
+        <img src="R.png" alt="Imagen 2" onclick="ampliarImagen(event)">
+        <p>Miriam Gianely Torres Caricio</p>
+    </div>
+    <div class="imagen">
+        <img src="29.png" alt="Imagen 3" onclick="ampliarImagen(event)">
+        <p>Javier nahucatl Castillo</p>
+    </div>
+    <div class="imagen">
+        <img src="R.png" alt="Imagen 4" onclick="ampliarImagen(event)">
+        <p>Aidee Rosas Valdes</p>
+    </div>
+ <div class="imagen">
+        <img src="29.png" alt="Imagen 1" onclick="ampliarImagen(event)">
+        <p>Eli Martinez Cortes</p>
+    </div>
+    <div class="imagen">
+        <img src="R.png" alt="Imagen 2" onclick="ampliarImagen(event)">
+        <p>Alma Stephanie Espinosa Luna</p>
+    </div>
+    <div class="imagen">
+        <img src="R.png" alt="Imagen 3" onclick="ampliarImagen(event)">
+        <p>Remedios</p>
+    </div>
+</body>
+</html>

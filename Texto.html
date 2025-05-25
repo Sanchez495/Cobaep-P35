@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PvZ.com</title>
+    <style>
+        body {
+            font-size: 24px; /* Ajusta el tamaño del texto */
+            font-weight: normal; /* Asegura que el texto no esté en negrita */
+            margin: 60px; /* Establece un margen inicial */
+        }
+        .cuadro {
+            background-color: #f2f2f2; /* Color de fondo del cuadro */
+            color: #000000; /* Color del texto dentro del cuadro */
+            border: 2px solid #333333; /* Borde del cuadro */
+            padding: 20px; /* Espaciado interno del cuadro */
+            border-radius: 10px; /* Bordes redondeados */
+            animation: aparecerTexto 3s ease; /* Animación para el cuadro de texto */
+        }
+        img {
+            animation: aparecerImagen 2s ease; /* Animación para la imagen */
+        }
+
+        /* Animación del texto */
+        @keyframes aparecerTexto {
+            from {
+                opacity: 0; /* Comienza invisible */
+                transform: translateY(-20px); /* Desplazamiento inicial hacia arriba */
+            }
+            to {
+                opacity: 1; /* Termina visible */
+                transform: translateY(0); /* Posición final */
+            }
+        }
+
+        /* Animación de la imagen */
+        @keyframes aparecerImagen {
+            from {
+                opacity: 0; /* Comienza invisible */
+                transform: translateX(50px); /* Desplazamiento inicial hacia la derecha */
+            }
+            to {
+                opacity: 1; /* Termina visible */
+                transform: translateX(0); /* Posición final */
+            }
+        }
+    </style>
+</head>
+<body>
+    <font color="black">
+        <h2>¡Bienvenidos al Colegio de Bachilleres del Estado de Puebla Plantel 35 (Cobaep)!</h2>
+        <div class="cuadro">
+            <p>En el Cobaep, nos enorgullece ofrecerte una educación de calidad que te prepara para afrontar los desafíos del futuro. Con más de 30 años de experiencia, nuestra misión es brindarte las herramientas necesarias para que desarrolles tu potencial académico, personal y profesional.</p>
+
+            <p><strong>¿Por qué estudiar en el Cobaep?</strong></p>
+
+            <ul>
+        <img src="i.png" width="400" align="right">
+                <li>Formación Integral: Además de una educación académica sólida, te ofrecemos actividades culturales, deportivas y sociales que fomentan tu crecimiento integral.</li>
+                <li>Variedad de opciones: Contamos con diversos planes educativos, adaptados a tus intereses, desde áreas de ciencias, humanidades, hasta opciones técnicas que te permitirán desarrollar habilidades prácticas.</li>
+                <li>Acceso a becas y apoyos: Queremos que tu único enfoque sea aprender. Por eso, ofrecemos becas y programas de apoyo para que puedas concentrarte en tu educación sin preocupaciones.</li>
+            </ul>
+
+            <p>Nuestro compromiso es tu éxito. Queremos acompañarte en este emocionante camino hacia el futuro, brindándote un entorno de aprendizaje que te desafíe, te inspire y te prepare para continuar con tus estudios superiores o para iniciar una carrera profesional exitosa.</p>
+
+            <p>¡Te invitamos a formar parte de nuestra comunidad! Inscríbete hoy en el Cobaep y da el primer paso hacia un futuro brillante. ¡Te esperamos!</p>
+        </div>
+    </font>
+<div class="social-media">
+                    <a href="https://www.facebook.com/share/1AFs8CoKHT/" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/gonzaaj47?igsh=cnB5Ymt2c2hrZmhv" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+</body>
+</html>
